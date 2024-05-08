@@ -1,0 +1,271 @@
+/* Estilo geral */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    float: left; /* Posiciona a logo à esquerda */
+    width: 200px; /* Ajusta a largura da logo */
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  nav {
+    background-color: #911F67; /* Cor da barra roxa */
+    height: auto; /* Ajusta a altura da barra automaticamente */
+  }
+  
+  nav ul {
+    display: inline-block; /* Itens do menu como elementos em linha */
+    list-style: none; /* Remove o marcador de lista padrão */
+    padding: 0; /* Remove o espaçamento padrão */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Itens do menu como elementos em linha */
+    margin-right: 20px; /* Espaçamento entre itens */
+  }
+  
+  .menu-toggle {
+    display: none; /* Menu responsivo */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #911F67;
+    margin: 5px 0;
+  }
+  
+  /* Seção Hero */
+  
+  .hero {
+    background-image: url("banneragnello2.png"); /* Caminho para a imagem do banner */
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    text-align: center;
+    color: #000000;
+    padding: 70px 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .hero .btn {
+    background-color: #911F67; /* Cor padrão dos botões roxos */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Se os botões roxos possuem transição */
+  }
+  
+  /* Seção Login */
+  
+  #login-form {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  #login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  #login-form .btn {
+    margin-top: 20px;
+  }
+  
+  /* Seções gerais */
+  
+  section {
+    background-color: #fff;
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Seção Sobre */
+  
+  .sobre .historia,
+  .sobre .processo {
+    margin-bottom: 40px;
+  }
+  
+  .sobre .historia p,
+  .sobre .processo ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Seção Produtos */
+  
+  .produtos {
+    background-color: #911F67; /* Cor de fundo roxa */
+    color: #fff; /* Ajusta a cor do texto para branco */
+    padding: 40px 0;
+  }
+  
+  .produtos .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .produtos .produto {
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .produtos .produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .produtos .produto h3 {
+    font-size: 18px; /* Tamanho da fonte para títulos h3 em produtos */
+  }
+  
+  .produtos .produto p {
+    margin-bottom: 15px;
+  }
+  
+  /* Seção Loja */
+  
+  .loja {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .loja p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .loja .btn {
+    margin-top: 20px;
+  }
+  
+  /* Seção Contato */
+  
+  .contato {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .contato form {
+    width: 500px; /* Ajusta a largura do formulário */
+    margin: 0 auto;
+  }
+  
+  .contato label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contato input,
+  .contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .contato textarea {
+    height: 100px; /* Ajusta a altura da área de texto */
+  }
+  
+  .contato .btn {
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #911F67; /* Cor do rodapé */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  /* Menu Responsivo */
+  
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Esconde o menu no modo responsivo */
+    }
+  
+    .menu-toggle {
+      display: block; /* Mostra o menu responsivo */
+    }
+  
+    .hero {
+      height: 350px; /* Ajusta a altura do hero no modo responsivo */
+    }
+  
+    .produtos .grid {
+      flex-direction: column; /* Alinha os produtos em coluna no modo responsivo */
+    }
+  
+    .produtos .produto {
+      width: 100%; /* Ocupa a largura total no modo responsivo */
+      margin-bottom: 20px;
+    }
+  }
+  
